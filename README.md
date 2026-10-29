@@ -1,4 +1,4 @@
-#serverhybridsetup
+# serverhybridsetup
 It's some notes, scripts, and routine instructions to setting up a machine that just won't fit in a box.
 
 ##Intro
