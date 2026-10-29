@@ -1,7 +1,7 @@
 # serverhybridsetup
 It's some notes, scripts, and routine instructions to setting up a machine that just won't fit in a box.
 
-##Intro
+## Intro
 I just started experimenting with remote access. 
 I am familiar with some Linux distros, but sometimes I want to pull the curtains and just see what happens if I just started with nothing and added more.
 
