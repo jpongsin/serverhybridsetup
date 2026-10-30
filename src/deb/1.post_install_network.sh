@@ -17,7 +17,7 @@ sudo systemctl enable NetworkManager-wait-online.service
 
 #go to netplan and see what you can do?
 #use your text editor and set renderer: NetworkManager
-cd ./etc/netplan/
+cd /etc/netplan
 ls
 
 
