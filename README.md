@@ -50,7 +50,7 @@ They should work mostly the same as a Workstation version of an OS. I have repli
 So far I got old Windows machine running. You mostly have to do a fresh install on it. You do have to own a license to be legit, but there's plenty of ways you can get the ISO, the installer... 
 There's no telling if the virtual machine image will carry over to another new one. I tried to export from VirtualBox image to qcow2 and imported, but it did not work.
 
-### GAMING
+## GAMING
 This is the aspect that drove me to a Linux server type.
 Most of the time, the Debian types are well prepared for this stuff. I have seen Arch types, but Arch almost loses me that everything new always breaks what we depend on. For Fedora and OpenSUSE type, Fedora is almost a solid plug and play with some controller quirks to work out. More on that later.
 
