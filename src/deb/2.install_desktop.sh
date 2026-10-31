@@ -6,7 +6,10 @@ sudo netplan apply
 
 #install lxqt, lightdm
 sudo apt install lxqt-core -y
-sudo apt install lightdm lightdm-gtk-greeter cups cups-pk-helper gvfs gvfs-backends gvfs-fuse breeze-icon-theme lxqt-plugin lxqt-menu-data -y
+sudo apt install lightdm lightdm-gtk-greeter -y
+sudo apt install cups cups-pk-helper gvfs gvfs-backends gvfs-fuse -y
+sudo apt install breeze-icon-theme lxqt-plugin lxqt-menu-data -y
+sudo apt install fonts-noto-core fonts-noto-ui-core fonts-noto-mono -y
 sudo systemctl enable lightdm -y
 
 #install drivers
