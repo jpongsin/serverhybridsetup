@@ -11,20 +11,20 @@ I looked at options for remote access. I wanted a Web UI so I can access my work
 Within a local network, it was no problem accessing it via
 either an alias or IP addresses, with codes like 9090.
 
-But then, I kinda needed some quick VPN solution to try to secure it when I'm away. I was inspired by that one time when I had an app for household security and I tried to get a grasp at how it worked. For this server that's mostly just passing files for printing, media, running and compiling and testing, here's the following instructions I did.
+But then, I kinda needed some quick VPN solution to try to secure it when I'm away. I was inspired by that one time when I had an app for household security and I tried to get a grasp at how it worked. For this server that's mostly just basic stuff like testing and compiling, some printing and media.
 
-Why I did this instead of just installing the desktop app and add the features, I wanted finer control and something deliberate to put on, rather than overwhelming with unnecessary apps. And it kinda paid off! A lean desktop setup with just the basics, some apps.
+Why I did this instead of just installing the desktop app and add the features, I wanted finer control and something deliberate to put on, rather than overwhelming with unnecessary apps. And it kinda paid off! A lean desktop setup with just the basics, some apps. Here are some of the instructions.
 
 ## INSTRUCTIONS
 The most common overlap is that you need an interactive terminal emulator, a text editor like vim etc so that when you stumble upon a problem, you will have these tools to troubleshoot and solve.
 
-### DEB
+### APT
 I installed Ubuntu Server and made sure to have a static IP address. 
 I picked the most normal and default configuration for certainty. If you accidentally picked minimal, go to root and run deminimize.
 
-I deliberately connected my machine to wifi because I did not had an ethernet connecting at the time. Also, it's a hybrid setup: you want the wireless flavor of gaming and the remote flavor of the server.
+I deliberately connected my machine to wifi because I did not had an ethernet connecting at the time. Also, it's a hybrid setup: you want the wireless flavor of gaming and the remote flavor of the server. 
 
-After that, I transitioned from netplan to NetworkManager with a text editor.
+After that, I transitioned from netplan to NetworkManager with a text editor. Later, I disabled the wifi power mode and it went to desktop performance as far as wifi.
 
 Then, I also installed some web UI like Cockpit, threw in some virtual machines to kinda get the feel of remote access.
 
@@ -51,3 +51,6 @@ Getting a Windows machine running on a customized Linux setup is good, but again
 
 ## GAMING
 This part inspired me to look toward a hybrid setup. Everywhere I've tried with most Linux distros, they're OK, but only Fedora and Debian/Ubuntu hit the right spot of stability. As Arch more or less dominates this part of gaming, they are very good for keeping things brand new, but using it in the long term has caused some dependencies to break, which is not ideal when you are trying to set up with a workstation or a laptop in mind. They will mostly show game launchers, which presents itself as a deb or rpm file, or something sandboxed. For fine control, the earlier is preferred.
+
+## THE TAKEAWAY
+I just want to install the base OS and then build up a whole desktop environment and remote access tools. Put a head on a headless OS. That's all there is to it.
