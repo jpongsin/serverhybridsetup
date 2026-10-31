@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# for this to work, type source 1.post_install_network.sh 
 #tested on ubuntu server
 
 #Update and upgrade your programs, services, etc before doing anything else.

@@ -5,10 +5,10 @@
 sudo netplan apply
 
 #install lxqt, lightdm
-sudo apt install lxqt-core -y
+sudo apt install lxqt-core lxqt-menu-data -y
 sudo apt install lightdm lightdm-gtk-greeter -y
 sudo apt install cups cups-pk-helper gvfs gvfs-backends gvfs-fuse -y
-sudo apt install breeze-icon-theme lxqt-plugin lxqt-menu-data -y
+sudo apt install breeze-icon-theme lxqt-menu-data -y
 sudo apt install fonts-noto-core fonts-noto-ui-core fonts-noto-mono -y
 sudo systemctl enable lightdm -y
 
@@ -19,13 +19,17 @@ sudo apt install bluetooth bluez bluez-tools rfkill -y
 sudo systemctl enable bluetooth
 
 #audio
-sudo apt install pipewire pipewire-pulse pipewire-jack pipewire-alsa libspa-0.2-bluetooth wireplumber pulseaudio-utils
+sudo apt install pipewire pipewire-pulse pipewire-jack pipewire-alsa libspa-0.2-bluetooth wireplumber pulseaudio-utils -y
 sudo systemctl enable pipewire.socket
 sudo systemctl enable pipewire-pulse.socket
 sudo systemctl enable wireplumber.service
 
 #start
-sudo systemctl start lightdm bluetooth pipewire pipewire-pulse wireplumber
+sudo systemctl start lightdm 
+sudo systemctl start bluetooth 
+sudo systemctl start pipewire 
+sudo systemctl start pipewire-pulse 
+sudo systemctl start wireplumber
 
 
 
