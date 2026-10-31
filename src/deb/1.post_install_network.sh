@@ -15,10 +15,16 @@ sudo systemctl disable systemd-networkd wait.service
 sudo systemctl mask systemd-networkd-wait-online.service
 sudo systemctl enable NetworkManager-wait-online.service
 
+#if you are connected to wifi uncomment this:
+#set wifi power safe to 2 for desktop-like performance
+#cd /etc/NetworkManager
+#cd conf.d
+#ls /etc/NetworkManager/conf.d
+
 #go to netplan and see what you can do?
 #use your text editor and set renderer: NetworkManager
 cd /etc/netplan
-ls
+ls /etc/netplan
 
 
 
